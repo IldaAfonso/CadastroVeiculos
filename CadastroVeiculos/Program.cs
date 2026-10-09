@@ -10,7 +10,7 @@ class Program
     {
         Repositorio repositorio = new Repositorio();
 
-        // Carrega os dados uma única vez ao iniciar
+       
         List<Veiculo> veiculos = repositorio.Carregar();
 
         bool executando = true;
@@ -91,7 +91,7 @@ class Program
             }
             else
             {
-                // Evita manter na lista um cadastro não salvo
+        
                 veiculos.Remove(veiculo);
                 Console.WriteLine(
                     "Cadastro não salvo. Tente novamente.");
@@ -122,7 +122,7 @@ class Program
         Console.WriteLine($"Total de itens: {veiculos.Count}");
     }
 
-    // Valida texto obrigatório
+    
     static string LerTexto(string mensagem)
     {
         while (true)
@@ -140,7 +140,7 @@ class Program
         }
     }
 
-    // Valida números inteiros
+
     static int LerInteiro(
         string mensagem, int minimo, int maximo)
     {
@@ -173,8 +173,7 @@ class Program
         }
     }
 
-    // Valida números decimais
-    static decimal LerDecimal(string mensagem)
+        static decimal LerDecimal(string mensagem)
     {
         while (true)
         {
@@ -206,7 +205,6 @@ class Program
         }
     }
 
-    // Valida resposta s/n
     static bool LerSimNao(string mensagem)
     {
         while (true)

@@ -13,12 +13,12 @@ public class Veiculo
     public string Cor { get; set; } = string.Empty;
     public decimal Preco { get; set; }
 
-    // Construtor vazio
+
     public Veiculo()
     {
     }
 
-    // Construtor completo
+
     public Veiculo(string marca, string modelo, int ano,
                    string cor, decimal preco)
     {
@@ -29,7 +29,7 @@ public class Veiculo
         Preco = preco;
     }
 
-    // Método virtual
+   
     public virtual void Apresentar()
     {
         Console.WriteLine(

@@ -9,10 +9,10 @@ public class Repositorio
 {
     private readonly string _caminhoArquivo = "veiculos.json";
 
-    // Carrega os veículos salvos no arquivo JSON
     public List<Veiculo> Carregar()
     {
-        // Estado 1: arquivo não existe
+        
+        
         if (!File.Exists(_caminhoArquivo))
         {
             Console.WriteLine(
@@ -26,7 +26,8 @@ public class Repositorio
         {
             string conteudo = File.ReadAllText(_caminhoArquivo);
 
-            // Estado 2: arquivo vazio ou só com espaços
+            
+            
             if (string.IsNullOrWhiteSpace(conteudo))
             {
                 Console.WriteLine(
@@ -54,7 +55,7 @@ public class Repositorio
 
             return veiculos;
         }
-        // Estado 3: JSON inválido
+      
         catch (JsonException)
         {
             Console.WriteLine(
@@ -82,7 +83,7 @@ public class Repositorio
 
             return new List<Veiculo>();
         }
-        // Estado 4: erro de leitura
+        
         catch (IOException erro)
         {
             Console.WriteLine(
@@ -93,7 +94,7 @@ public class Repositorio
         }
     }
 
-    // Salva os veículos no arquivo JSON
+    
     public bool Salvar(List<Veiculo> veiculos)
     {
         try
