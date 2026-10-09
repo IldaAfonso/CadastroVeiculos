@@ -1,0 +1,32 @@
+[
+  {
+    "tipo": "Moto",
+    "Cilindradas": 160,
+    "Marca": "Honda",
+    "Modelo": "CG 160",
+    "Ano": 2023,
+    "Cor": "Vermelha",
+    "Preco": 17000
+  },
+  {
+    "Marca": "BMW",
+    "Modelo": "Rolls Royce",
+    "Ano": 2025,
+    "Cor": "Preta",
+    "Preco": 2500000
+  },
+  {
+    "Marca": "Range Rover",
+    "Modelo": "Evoque",
+    "Ano": 2026,
+    "Cor": "Silver",
+    "Preco": 520000
+  },
+  {
+    "Marca": "GAC",
+    "Modelo": "GS3",
+    "Ano": 2026,
+    "Cor": "Branco",
+    "Preco": 130000
+  }
+]
